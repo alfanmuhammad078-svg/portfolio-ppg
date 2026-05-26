@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profil Mahasiswa</title>
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar-container">
+    <h1 class="navbar-logo">Portfolio PPG</h1>
+    <ul class="navbar-menu">
+      <li><a href="profil.html" class="menu-link active">Profil</a></li>
+      <li><a href="artefak.html" class="menu-link">Artefak</a></li>
+      <li><a href="#" class="menu-link">Refleksi</a></li>
+      <li><a href="#" class="menu-link">Penilaian</a></li>
+      <li><a href="model-guru.html" class="menu-link">Model Guru</a></li>
+    </ul>
+  </nav>
+
+  <div class="profile-card">
+    
+    <div class="avatar-container">
+      <img src="rafli (2).jpg" alt="Foto Profil" class="profile-avatar">
+    </div>
+
+    <h2 class="card-title">Profil Mahasiswa</h2>
+
+    <div class="bio-details">
+      <p><strong>Nama:</strong> Rafli Ariansah S</p>
+      <p><strong>NIM:</strong> 123456789</p>
+      <p><strong>Prodi:</strong> PPG Calon Guru</p>
+      <p><strong>Kampus:</strong> kampus wwww</p>
+    </div>
+
+    <button onclick="toggleDetail()" id="btn-toggle" class="btn-detail">Lihat Detail</button>
+
+    <div id="detail-section" class="profil-detail" style="display: none;">
+      
+      <div class="base-info-box">
+        <p><strong>Hobi:</strong> Mengajar dan sepak bola</p>
+        <p><strong>Visi:</strong> Menjadi guru profesional dan inovatif</p>
+      </div>
+
+      <div class="detail-grid">
+        
+        <div class="estetik-box">
+          <div class="icon-wrapper glass-blue">📍</div>
+          <div class="box-content">
+            <h3>Daerah Asal</h3>
+            <p>Kota Madiun tidak hanya dikenal sebagai kota kecil di Jawa Timur, tetapi juga sebagai simbol kekuatan budaya melalui pencak silat.</p>
+          </div>
+        </div>
+
+        <div class="estetik-box">
+          <div class="icon-wrapper glass-pink">🎯</div>
+          <div class="box-content">
+            <h3>Tujuan</h3>
+            <p>Saya senang menjelaskan sesuatu kepada orang lain dan berbicara di depan umum. Saya bahagia ketika mampu membantu orang lain memahami materi.</p>
+          </div>
+        </div>
+
+        <div class="estetik-box">
+          <div class="icon-wrapper glass-orange">🔥</div>
+          <div class="box-content">
+            <h3>Motivasi</h3>
+            <p>Untuk berbagi ilmu serta menciptakan pembelajaran yang bermakna bagi peserta didik demi menjadi guru yang profesional.</p>
+          </div>
+        </div>
+
+      </div> </div> </div> <script>
+    function toggleDetail() {
+      var detail = document.getElementById("detail-section");
+      var btn = document.getElementById("btn-toggle");
+      
+      if (detail.style.display === "none" || detail.style.display === "") {
+        detail.style.display = "block";
+        btn.textContent = "Sembunyikan Detail";
+      } else {
+        detail.style.display = "none";
+        btn.textContent = "Lihat Detail";
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="PROFIL.CSS">
+
+</body>
+</html>

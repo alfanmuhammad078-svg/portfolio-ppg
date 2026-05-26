@@ -1,0 +1,93 @@
+/* ==========================================================================
+   STYLE HALAMAN DAFTAR ARTEFAK / DOKUMEN SIKLUS
+   ========================================================================== */
+
+/* Latar Belakang Foto Transparan (Sesuai Konsep Awal) */
+.custom-bg {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(135deg, rgba(15, 23, 42, 0.9) 0%, rgba(81, 165, 233, 0.75) 50%, rgba(39, 188, 233, 0.9) 100%), 
+                    url('bg-transparan.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* Efek Kaca untuk Navbar */
+.glass {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+
+/* Komponen Card Putih Bersih Minimalis Sesuai Gambar Referensi */
+.card-document {
+  background-color: rgba(132, 218, 210, 0.96); /* Putih bersih sedikit transparan agar blend dengan background */
+  border-radius: 20px;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card-document:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2);
+  background-color: #ffffff; /* Menjadi putih pekat saat disorot */
+}
+
+/* Kotak Dudukan Icon Dokumen Biru Muda */
+.icon-box {
+  background-color: #eff6ff; /* Blue 50 */
+  border-radius: 10px;
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+/* Tipografi Teks di Dalam Card */
+.card-title {
+  font-size: 1.25rem; /* 20px */
+  font-weight: 700;
+  color: #1e293b; /* Slate 800 */
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+
+.card-desc {
+  font-size: 0.925rem; /* ~15px */
+  color: #64748b; /* Slate 500 */
+  line-height: 1.6;
+  margin-bottom: 24px;
+  text-align: left;
+}
+
+/* Link Navigasi Tombol Keluar (External Link) */
+.card-link {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #2563eb; /* Blue 600 */
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: auto; /* Memaksa tombol selalu berada paling bawah kotak */
+  transition: color 0.2s;
+}
+
+.card-link:hover {
+  color: #1d4ed8; /* Blue 700 */
+  text-decoration: underline;
+}
+
